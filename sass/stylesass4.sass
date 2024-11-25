@@ -1,0 +1,66 @@
+@mixin font($n)
+  font-size: $n
+
+$border: 1px solid
+
+body
+  margin: 1vh
+  padding: 0
+  font-family: "Lora", sans-serif
+  max-width: 1920px
+  margin-left: auto
+  margin-right: auto
+
+header
+  display: flex
+  justify-content: center
+  border-bottom: 2px solid
+
+b
+  @include font(24px)
+
+i
+  @include font(16px)
+
+#logo
+  height: 40px
+  width: 130px
+  margin: 1vh
+  font-size: 24px
+  background: #4fc44f
+  border-radius: 1vh
+  text-align: center
+  justify-self: left
+  line-height: 40px
+  border: $border
+
+section
+  display: flex
+  flex-direction: row
+
+main
+  flex-basis: 80%
+  border-right: $border
+  font-size: 20px
+  b
+    @include font(32px)
+
+aside
+  flex-basis: 20%
+
+article
+  display: flex
+  margin: 20px
+  column-gap: 30px
+
+@media (max-width: 768px)
+  section article
+    display: flex
+    flex-direction: column
+
+img
+  flex-grow: 0
+  flex-shrink: 0
+  width: 50%
+  height: auto
+  border: $border

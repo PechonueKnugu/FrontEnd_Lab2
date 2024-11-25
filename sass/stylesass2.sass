@@ -1,0 +1,134 @@
+$border: 1px solid
+
+body
+  margin: 1vh
+  padding: 0
+  font-family: "Lora", sans-serif
+  max-width: 1920px
+  margin-left: auto
+  margin-right: auto
+
+header
+  display: grid
+  grid-template-columns: auto auto
+  border-bottom: 2px solid
+
+button
+  cursor: pointer
+
+
+#Carpathian
+  max-width: 100%
+  height: auto
+  object-fit: cover
+  align-self: center
+
+
+.logo
+  height: 40px
+  width: 130px
+  margin: 1vh
+  font-size: 24px
+  background: #4fc44f
+  border-radius: 1vh
+  text-align: center
+  justify-self: left
+  line-height: 40px
+  border: $border
+
+#main_reg_but
+  align-self: center
+  height: 40px
+  width: 100px
+  margin: 1vh
+  font-size: 20px
+  background: darkseagreen
+  justify-self: end
+
+
+#sec1
+  display: grid
+  grid-template-columns: 50% 50%
+  border-bottom: 2px solid
+  margin-left: 1vh
+  article
+    display: grid
+  p
+    font-size: 24px
+
+.reg_but
+  height: 40px
+  width: 100px
+  margin: 1vh
+  font-size: 20px
+  background: darkseagreen
+  justify-self: center
+
+#sec2
+  display: grid
+  justify-content: center
+  column-gap: 2vh
+  grid-template-columns: 20% 20% 20%
+  border-bottom: 2px solid
+  background-image: url('https://7cars.com.ua/wp-content/uploads/2019/03/Carpathian-mountains.jpg')
+  background-size: cover
+  background-position: center
+  background-repeat: no-repeat
+  article
+    margin-top: 20px
+    background: #4fc44f
+    border: $border
+    p
+      word-wrap: break-word
+      overflow-wrap: break-word
+      margin: 10px
+  .reg_but
+    grid-column: 2
+
+#sec3
+  display: grid
+  column-gap: 2vh
+  justify-content: center
+  row-gap: 2vh
+  grid-template-columns: 20% 20% 20%
+  border-bottom: 2px solid
+  h1
+    justify-self: center
+    grid-column: 1 / span 3
+  article
+    display: grid
+    background: #4fc44f
+    grid-template-columns: 25% 75%
+    border: $border
+    p
+      word-wrap: break-word
+      overflow-wrap: break-word
+    p:first-of-type
+      justify-self: center
+      font-size: 48px
+  .reg_but
+    grid-column: 1 / span 3
+
+footer
+  margin-top: 20px
+  display: grid
+  grid-template-columns: 15% 70%
+  article
+    display: grid
+    justify-self: center
+    grid-template-columns: 20% 20% 20%
+    column-gap: 100%
+    justify-content: center
+    row-gap: 40%
+  a
+    text-decoration: none
+    color: black
+
+@media (max-width: 768px)
+  footer article
+    display: grid
+    justify-self: center
+    grid-template-columns: 20% 20%
+    column-gap: 5vh
+    justify-content: center
+    row-gap: 40%
